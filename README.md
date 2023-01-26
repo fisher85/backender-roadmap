@@ -16,6 +16,7 @@ Feel the difference between the frontend and backend of a web application: [Laye
 
 ## Diary
 
-25.01.2023 Layered Architecture. Frontend and backend. REST API.
+- [x] 25.01.2023. Layered Architecture. Frontend and backend. REST API.
+- [ ] HTML. HTTP.
 
 **[⬆ back to top](#table-of-contents)**
