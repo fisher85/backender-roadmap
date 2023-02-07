@@ -1,8 +1,8 @@
-from typing import Union
-
-from fastapi import FastAPI
+from fastapi import Body, FastAPI
 from fastapi.responses import HTMLResponse
+from math import sqrt
 import uvicorn
+
 
 app = FastAPI()
 
@@ -29,8 +29,13 @@ async def read_root():
 
 
 @app.get("/items/{item_id}")
-async def read_item(item_id: int, q: Union[str, None] = None):
+async def read_item(item_id: int, q: int):
     return {"item_id": item_id, "q": q}
+
+
+@app.post("/square_root")
+async def square_root(number: int = Body(embed=True)):
+    return sqrt(number)
 
 
 if __name__ == "__main__":
