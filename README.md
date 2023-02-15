@@ -11,7 +11,7 @@ Step by step guide to becoming a modern backend developer
 
 Feel the difference between the frontend and backend of a web application: [Layered Architecture Demo](01-layered-architecture/)
 
-- [Scaling Distributed Systems - Software Architecture Introduction (part 2)](https://www.youtube.com/watch?v=gxfERVP18-g)
+- 🎬 [Scaling Distributed Systems - Software Architecture Introduction (part 2)](https://www.youtube.com/watch?v=gxfERVP18-g)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -20,7 +20,7 @@ Feel the difference between the frontend and backend of a web application: [Laye
 From HTTP/1 to 1.1, 2, and 3:
 
 - [Real world examples of HTTP/2 and HTTP/3](02-http-2-3/)
-- [HTTP/1 to HTTP/2 to HTTP/3](https://www.youtube.com/watch?v=a-sBfyiXysI)
+- 🎬 [HTTP/1 to HTTP/2 to HTTP/3](https://www.youtube.com/watch?v=a-sBfyiXysI)
 
 **[⬆ back to top](#table-of-contents)**
 
