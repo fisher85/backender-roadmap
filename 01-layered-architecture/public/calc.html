@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Calculcator</title>
+    </head>
+    <body>
+        <h1>Hello, I can do arithmetic!</h1>
+        <label for="number">Number:</label>
+        <input type="text" id="number" required minlength="1" maxlength="3" size="10">
+        <button name="button" onclick="compute()">Compute!</button>
+        <br><br>
+        <label for="result">Result:</label>
+        <input type="text" id="result" disabled size="10">
+    </body>
+    <script type="text/javascript">
+        function compute() {
+            const number = document.getElementById('number').value;
+            let resultElement = document.getElementById('result');
+
+            const url = `http://127.0.0.1:8000/square_root/${number}`;
+            fetch(url, {
+                method: "GET",
+            })
+                .then((response) => {
+                    if (!response.ok) throw Error(response.statusText);
+                    return response.text();
+                })
+                .then((data) => {
+                    console.log(`Response from backend: ${data}`);
+                    resultElement.value = data;
+                })
+                .catch(function(error) {
+                    console.error(error);
+                    alert(`Something went wrong!\n${error}`);
+                });
+        }
+    </script>
+</html> 

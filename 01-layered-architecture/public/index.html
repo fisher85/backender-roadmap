@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Some HTML in here</title>
+    </head>
+    <body>
+        <h1>Hello, world!</h1>
+    </body>
+    <script type="text/javascript">
+        function changeHeader() {
+            let h1 = document.querySelector('h1');
+            h1.innerHTML = '3 seconds have passed!';
+        }
+        setTimeout(changeHeader, 3000);
+    </script>
+</html>
