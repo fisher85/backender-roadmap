@@ -1,4 +1,5 @@
 # backender-roadmap
+
 Step by step guide to becoming a modern backend developer
 
 ## Table of Contents
@@ -28,7 +29,11 @@ From HTTP/1 to 1.1, 2, and 3:
 
 - [x] 25.01.2023. Layered Architecture. Frontend and backend. REST API.
 - [x] 01.02.2023. HTML. HTTP.
-- [x] 08.02.2023. HTTP. Exercises with GET and POST methods in Chrome and Postman. 
+- [x] 08.02.2023. HTTP. Exercises with GET and POST methods in Chrome and Postman.
+- [x] 01.03.2023. HTTP/2. The simplest JS frontend. API design example.
+- [ ] Internet. What is hosting? DNS.
+- [ ] Git Crash Course.
+- [ ] Test-driven development.
 - [ ] HTTP. Replace Uvicorn HTTP/1.1 with Hypercorn HTTP/2 and check the HTTP/2 connection.
 - [ ] CI/CD. Running GitHub Actions on push to main.
 
