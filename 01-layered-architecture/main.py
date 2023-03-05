@@ -20,8 +20,13 @@ async def square_root(number: float):
 
 
 @app.post("/square_root")
-async def square_root(number: float = Body(embed=True)):
+async def square_root2(number: float = Body(embed=True)):
     return sqrt(number)
+
+
+@app.post("/secret_func")
+async def secret_func(first: int = Body(embed=True), second: int = Body(embed=True)):
+    return {'answer': 'Bad input' if second < 0 else first + second}
 
 
 if __name__ == "__main__":
