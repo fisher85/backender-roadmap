@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Calculcator</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Hello, I can do arithmetic!</h1>
+          <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="number" placeholder="81" required minlength="1" maxlength="3" size="10">
+              <label for="number">Number</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="result" placeholder="9" readonly>
+              <label for="result">Result</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="button" onclick="compute()">Compute</button>
+            <hr class="my-4">
+            <small class="text-body-secondary">By clicking Compute, you agree to the terms of use.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+      function compute() {
+          const number = document.getElementById('number').value;
+          let resultElement = document.getElementById('result');
+
+          const url = `http://127.0.0.1:8000/square_root/${number}`;
+          fetch(url, {
+              method: "GET",
+          })
+              .then((response) => {
+                  if (!response.ok) throw Error(response.statusText);
+                  return response.text();
+              })
+              .then((data) => {
+                  console.log(`Response from backend: ${data}`);
+                  resultElement.value = data;
+              })
+              .catch(function(error) {
+                  console.error(error);
+                  alert(`Something went wrong!\n${error}`);
+              });
+      }
+  </script>
+</html>
