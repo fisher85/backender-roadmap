@@ -2,7 +2,11 @@ from fastapi import Body, FastAPI
 from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from math import sqrt
+import hypercorn
 import uvicorn
+import asyncio
+from hypercorn.config import Config
+from hypercorn.asyncio import serve
 
 
 app = FastAPI()
@@ -25,4 +29,9 @@ async def square_root(number: float = Body(embed=True)):
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, log_level="debug")
+    config = Config()
+    config.host = ["127.0.0.1:8000"]
+    config.loglevel = 'debug'
+    config.keyfile = 'key.pem'
+    config.certfile = 'cert.pem'
+    asyncio.run(serve(app, config))
