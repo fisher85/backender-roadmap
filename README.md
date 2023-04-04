@@ -33,8 +33,7 @@ From HTTP/1 to 1.1, 2, and 3:
 - [x] 01.03.2023. HTTP/2. The simplest JS frontend. API design example.
 - [x] 16.03.2023. Internet. What is hosting? DNS. Git Crash Course, part 1, introduction to git.
 - [x] 24.03.2023. DNS root servers. Autonomous systems. Unit tests, pytest, test-driven development (TDD). Git Crash Course, part 2, git basics.
-- [ ] Markdown.
-- [ ] CSS. Twitter Bootstrap. SASS vs LESS.
+- [x] 31.03.2023. Git homework. Markdown. CSS. Twitter Bootstrap. CSS preprocessors.
 - [ ] Git Crash Course, part 3, git branching.
 - [ ] Containerization vs. Virtualization. Docker. Kubernetes.
 - [ ] HTTP. Replace Uvicorn HTTP/1.1 with Hypercorn HTTP/2 and check the HTTP/2 connection.
