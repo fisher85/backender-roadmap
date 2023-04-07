@@ -1,0 +1,10 @@
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: likesimba9/backender_roadmap:4.0
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run test app
+      run: cd 01-layered-architecture; pytest .
