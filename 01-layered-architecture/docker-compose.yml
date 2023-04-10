@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    restart: always
+    ports:
+      - 8080:80
