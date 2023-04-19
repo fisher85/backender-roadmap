@@ -8,7 +8,7 @@
 Run service in container, need to run this command in folder with Dockerfile
 ```bash
 docker build --rm --tag app .
-docker run -d -p 8080:80 --rm -it -v $(pwd):/app app
+docker run  -p 8080:80  -v $(pwd):/app app
 ```
 
 Build image for CI
