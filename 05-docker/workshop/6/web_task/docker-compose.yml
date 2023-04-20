@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  app:
+    build: service
+    volumes:
+      - ./service:/app
+    restart: always
+    ports:
+      - 5000:5000
+    depends_on:
+      - mariadb
+    command: ["python3", "main.py"]
+
+  mariadb:
+    image: mariadb:latest
+    volumes:
+      - ./service/mysql_data/date.sql:/docker-entrypoint-initdb.d/date.sql
+    restart: always
+    ports:
+      - "3307:3306"
+    expose:
+      - "3307"
+    environment:
+            MARIADB_ROOT_PASSWORD: 5up3r53cr37p45w0rd
+            MARIADB_USER: user
+            MARIADB_PASSWORD: 5up3r53cr37p45w0rd

