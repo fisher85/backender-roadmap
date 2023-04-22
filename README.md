@@ -34,9 +34,9 @@ From HTTP/1 to 1.1, 2, and 3:
 - [x] 16.03.2023. Internet. What is hosting? DNS. Git Crash Course, part 1, introduction to git.
 - [x] 24.03.2023. DNS root servers. Autonomous systems. Unit tests, pytest, test-driven development (TDD). Git Crash Course, part 2, git basics.
 - [x] 31.03.2023. Git homework. Markdown. CSS. Twitter Bootstrap. CSS preprocessors.
-- [ ] Git Crash Course, part 3, git branching.
-- [ ] Containerization vs. Virtualization. Docker. Kubernetes.
-- [ ] HTTP. Replace Uvicorn HTTP/1.1 with Hypercorn HTTP/2 and check the HTTP/2 connection.
+- [x] 07.04.2023. HTTP. Replace Uvicorn HTTP/1.1 with Hypercorn HTTP/2 and check the HTTP/2 connection. Git Crash Course, part 3, git branching.
+- [x] 14.04.2023. Containerization vs. Virtualization. Docker.
+- [x] 21.04.2023. ~~Docker workshop.~~ Git hosting services: GitHub, BitBucket, GitLab. Git flows: GitFlow, GitHub Flow, GitLab Flow.
 - [ ] CI/CD. Running GitHub Actions on push to main.
 
 **[⬆ back to top](#table-of-contents)**
