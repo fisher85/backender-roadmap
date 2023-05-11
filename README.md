@@ -37,6 +37,9 @@ From HTTP/1 to 1.1, 2, and 3:
 - [x] 07.04.2023. HTTP. Replace Uvicorn HTTP/1.1 with Hypercorn HTTP/2 and check the HTTP/2 connection. Git Crash Course, part 3, git branching.
 - [x] 14.04.2023. Containerization vs. Virtualization. Docker.
 - [x] 21.04.2023. ~~Docker workshop.~~ Git hosting services: GitHub, BitBucket, GitLab. Git flows: GitFlow, GitHub Flow, GitLab Flow.
+- [x] 28.04.2023. Docker workshop.
+- [x] 05.05.2023. Build messenger on Node.js, Websockets and Vue.js (Quasar Framework).
+- [ ] 12.05.2023. GitHub Flow. Caching: client-side and server-side.
 - [ ] CI/CD. Running GitHub Actions on push to main.
 
 **[⬆ back to top](#table-of-contents)**
