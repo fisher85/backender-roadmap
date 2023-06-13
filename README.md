@@ -39,7 +39,10 @@ From HTTP/1 to 1.1, 2, and 3:
 - [x] 21.04.2023. ~~Docker workshop.~~ Git hosting services: GitHub, BitBucket, GitLab. Git flows: GitFlow, GitHub Flow, GitLab Flow.
 - [x] 28.04.2023. Docker workshop.
 - [x] 05.05.2023. Build messenger on Node.js, Websockets and Vue.js (Quasar Framework).
-- [ ] 12.05.2023. GitHub Flow. Caching: client-side and server-side.
+- [x] 12.05.2023. Learn Git Branching.
+- [x] 02.06.2023. Cloud technologies and virtual infrastructure management tools.
+- [x] 09.06.2023. The Go Programming Language.
+- [ ] Caching: client-side and server-side.
 - [ ] CI/CD. Running GitHub Actions on push to main.
 
 **[⬆ back to top](#table-of-contents)**
