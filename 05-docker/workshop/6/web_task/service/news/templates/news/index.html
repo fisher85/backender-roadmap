@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    News page
+{% endblock %}
+
+{% block title_content %}
+Breaking news
+{% endblock %}
+
+
+{% block content_0 %}
+    {% for new in news %}
+        <h4>
+            {{new[0]}}
+        </h4>
+        <p>
+            {{new[1]}}
+        </p>
+
+    {% endfor %}
+{% endblock %}

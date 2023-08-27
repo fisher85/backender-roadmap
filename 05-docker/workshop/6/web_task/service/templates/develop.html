@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Develop page
+{% endblock %}
+
+{% block title_content %}
+This is page need for test new generate cookie algorithm.
+<form method="post">
+
+      <h6 style="text-align:center">Please enter login and you get cookie.</h6>
+
+      <div class="col">
+        <input type="text" name="username" placeholder="Username" required value="{{ request.args.get('username', '') }}">
+
+        <input type="submit" value="Login">
+      </div>
+
+  </form>
+{% endblock %}
+
+
