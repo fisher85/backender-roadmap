@@ -27,6 +27,8 @@ From HTTP/1 to 1.1, 2, and 3:
 
 ## Diary
 
+### First Season
+
 - [x] 25.01.2023. Layered Architecture. Frontend and backend. REST API.
 - [x] 01.02.2023. HTML. HTTP.
 - [x] 08.02.2023. HTTP. Exercises with GET and POST methods in Chrome and Postman.
@@ -42,7 +44,16 @@ From HTTP/1 to 1.1, 2, and 3:
 - [x] 12.05.2023. Learn Git Branching.
 - [x] 02.06.2023. Cloud technologies and virtual infrastructure management tools.
 - [x] 09.06.2023. The Go Programming Language.
-- [ ] Caching: client-side and server-side.
+
+### Second Season
+
+- [x] 13.10.2023. Message Brokers: RabbitMQ and Kafka.
+- [x] 20.10.2023. Planning and Personal Productivity.
+- [x] 27.10.2023. Web Authentication: Basic, Cookies, OAuth, JWT.
 - [ ] CI/CD. Running GitHub Actions on push to main.
+- [ ] PostgreSQL vs ClickHouse.
+- [ ] Algorithms and Data Structures.
+- [ ] TypeScript. Node.js.
+- [ ] Caching: client-side and server-side.
 
 **[⬆ back to top](#table-of-contents)**
